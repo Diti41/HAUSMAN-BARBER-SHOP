@@ -33,7 +33,7 @@ body, html {
     height: 100%;
     max-width: 300px;
     position: relative;
-	top: 100px;
+	top: 80px;
     
 }
 
@@ -159,19 +159,16 @@ body, html {
     justify-content: center;
     align-items: center;
     overflow-y: auto;
-    padding: 10px 20px  ;
+    padding:   ;
 }
 
 .form-popup .form-container {
-    max-width: 300px;
-    width: 100%;
+    max-width: 500px;
+    width: 100vh;
     margin: 50px;
     max-height: 1000px;
     height: 100lvh;
-    top: 100px;
-   
-   
-   
+    top: 100px; 
 }
 
 .form-container .close-btn {
