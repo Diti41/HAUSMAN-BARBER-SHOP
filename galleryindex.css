@@ -1,0 +1,90 @@
+.main-gallery {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f0f0f0;
+}
+.main-text{
+  padding: 20px;
+}
+.main-text h1{
+	  text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.main-gallery .main-text p{
+  font-size: 20px;
+  font-weight: 500;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  width: 100%;
+  max-width: 1200px;
+  box-sizing: border-box;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img, .gallery-item video {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item:hover img {
+  transform: scale(0.9);
+}
+
+.gallery-item:hover video {
+  transform: scale(1.05);
+}
+
+.gallery-item video {
+  display: block;
+}
+
+.caption {
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 1rem;
+  background: #fff;
+}
+
+.cta-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+  
+}
+.cta-button a{
+	text-decoration: none;
+	color: #333;
+}
+
+.cta-button:hover {
+  background-color: #cc7a00;
+}
+

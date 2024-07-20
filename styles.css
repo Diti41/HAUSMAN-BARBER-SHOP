@@ -1,0 +1,342 @@
+
+
+/* Hero Styles Section */
+.tag-line-text{
+	margin: 2px;
+    padding: 30px;
+	text-align: center;
+	font-size: 30px;
+	font-weight: bold;
+	text-shadow: 5px 5px 5px rgb(0, 0, 0, 0.5);
+    background: #f2b75e;
+	width: 100%;
+	
+}
+.tag-line-text i{
+    padding: 10px;
+}
+.head-text {
+	height: 100vh;
+	width: 100vh;
+	
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    margin-top: 80px; /* Adjust according to header height */
+	margin-bottom: 30px;
+	background: #f2b75e;
+}
+
+.hero .slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+	
+}
+.hero .slide img {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+	background: #f2b75e;
+}
+
+.hero .caption {
+    position: absolute;
+    bottom: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: #fff;
+	background: rgb(0, 0, 0, 0.3);
+	border-radius: 10px;
+}
+
+.hero .caption h1 {
+    font-size: 48px;
+    margin: 0;
+    padding: 0;
+}
+
+.hero .cta-button {
+    background-color: #fff;
+    color: #000;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #cc7a00;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from { opacity: 0.4 }
+    to { opacity: 1 }
+}
+
+@media (max-width: 768px) {
+    .hero .caption h1 {
+        font-size: 24px;
+    }
+
+    .hero .cta-button {
+        font-size: 14px;
+    }
+}
+
+/* Services Styles */
+.services-text{
+	text-align: center;
+    color: #f2b75e;
+    
+}
+.services-text h1{
+	text-align: center;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+.premium-services{
+    display: flex;
+    list-style-type: none;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.premium-services ul{
+    padding: 10px;
+    margin: 30px;
+    display: inline-block;
+}
+.premium-services li{
+    display: flex;
+    padding: 20px;
+    margin-bottom: 30px;
+    border: 2px solid #f2b75e;
+    box-shadow: 1px 0px 6px 10px rgba(231, 136, 48, 0.5);
+    border-radius: 10px;
+    width: 100vh;
+    background: linear-gradient(to bottom left,  #f2b75e 10px, #363630f7 50px);
+}
+.premium-services li a:hover{
+    color: #cc7a00;
+}
+.premium-services p{
+    text-align: left;
+}
+.premium-services i, .services-text i{
+    padding: 15px;
+    color: #f2b75e;
+}
+.premium-services a{
+    text-decoration: none;
+    color: #fff;
+}
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px; /* Adjust according to header height */
+    padding: 20px;
+	border-top: 2px solid #333;
+    background: linear-gradient(to bottom left, #363630f7 90%,  #f2b75e 90%, #363630f7);
+   
+}
+.services a{
+    text-decoration: none;
+}
+.services .cta-button{
+    background: #f2b75e;
+    color: #000;
+}
+.service {
+    position: relative;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+	width: 100%;
+    height: 30%;
+}
+
+.service img {
+    width: 30%;
+    height: 30%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.service:hover img {
+    transform: scale(1.1); /* Zoom out effect */
+}
+
+.service .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 1; /* Always visible */
+}
+
+.service .text {
+    color: #fff;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	justify-content: center;
+    align-items: center;
+	margin-left: 50px;
+	
+   
+}
+.services-text .price-list{
+    display: flex;
+    padding: 30px 20px;
+    margin-top: 50px;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    color: #f2b75e ;
+}
+.service .text h1{
+    font-size: 40px;
+    color: #b57d2a;
+    background-color: #fff;
+    padding: 10px;
+    width: 40vh;
+    border-radius: 5px;
+}
+.service .text h2 {
+    font-size: 24px;
+    margin: 0;
+	text-align: center;
+}
+
+.service .text p {
+    font-size: 16px;
+	text-align: center;
+	padding:10px;
+}
+
+.service .cta-button {
+    background-color: #e7a55e;
+    color: #000;
+    padding: 5px auto;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+	width: 20vh;
+	
+}
+
+.service .cta-button:hover {
+    background-color: #cc7a00;
+}
+
+@media (max-width: 768px) {
+    .service .text h2 {
+        font-size: 20px;
+    }
+    .service {
+        height: 50vh;
+    }
+    .service img{
+        width: 50vh;
+        height: 50vh;
+    }
+
+    .service .text p {
+        font-size: 14px;
+    }
+
+    .service .cta-button {
+        font-size: 20px;
+    }
+	.service .cta-button a {
+        font-size: 16px;
+    }
+    .premium-services ul li{
+       flex-direction: column;
+       width: 60vh;
+    }
+}
+@media (max-width: 568px){
+    .premium-services ul li{
+        width: 50vh;
+    }
+}
+@media (max-width: 388px){
+    .services-text .price-list{
+        width: 50vh;
+    }
+    .service .text h1{
+        font-size: 20px;
+    }
+    .services-text  h1{
+        font-size: 25px;
+    }
+
+
+}
+
+
+@media (max-width: 468px) {
+    .service .text h2 {
+        font-size: 10px;
+    }
+    .service .text h1{
+        font-size: 10px;
+        width: 20vh;
+        
+    }
+
+    .services-text p,{
+        font-size: 12px;
+    }
+
+    .premium-services ul li{
+        width: 40vh;
+    }
+    .service .text p {
+        font-size: 9px;
+    }
+    .service .text p h1{
+        font-size: smaller;
+    }
+
+	.service .text a {
+        font-size: 12px;
+    }
+   
+}
+
+/* About Styles */
