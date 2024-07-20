@@ -21,7 +21,7 @@
   font-weight: 500;
 }
 .gallery {
-  display: grid;
+  display: inline-block;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 20px;
   padding: 20px;
@@ -38,6 +38,7 @@
   background-color: #fff;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
 }
 
 .gallery-item img, .gallery-item video {
@@ -63,7 +64,7 @@
   padding: 10px;
   box-sizing: border-box;
   text-align: center;
-  font-size: 1rem;
+  font-size: 2rem;
   background: #fff;
 }
 
@@ -88,3 +89,13 @@
   background-color: #cc7a00;
 }
 
+@media (max-width: 789px){
+  .caption{
+    font-size: 1.2rem;
+  }
+  .gallery-item img{
+    
+    height: 70%;
+  }
+}
+  
